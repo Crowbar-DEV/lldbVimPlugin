@@ -7,7 +7,7 @@ class Plugin(object):
         self.nvim = nvim
 
     @pynvim.function('step_over')
-    def step_over(self):
+    def step_over(self, args):
         os.system('python3 ~/shithole/CrowCave/vimtest/testsrc/lldbAdapter/client.py')
 
 
