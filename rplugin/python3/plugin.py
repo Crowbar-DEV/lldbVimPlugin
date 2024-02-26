@@ -1,12 +1,12 @@
-import pynvim
+import neovim
 import os
 
-@pynvim.plugin
+@neovim.plugin
 class Plugin(object):
     def __init__(self, nvim):
         self.nvim = nvim
 
-    @pynvim.function('step_over')
+    @neovim.function('step_over')
     def step_over(self, args):
         os.system('python3 ~/shithole/CrowCave/vimtest/testsrc/lldbAdapter/client.py')
 
